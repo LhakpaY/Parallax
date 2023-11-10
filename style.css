@@ -1,0 +1,140 @@
+.body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+
+  position: relative;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+  background: rgba(255, 255, 255, 0.32);
+  width: 450px;
+  border-radius: 10px;
+  padding: 1rem;
+
+  /* Making background blur */
+  backdrop-filter: blur(5px);
+}
+
+.down {
+  font-size: 5rem;
+  position: absolute;
+  left: 50vw;
+  bottom: 100px;
+  color: orangered;
+  transform: rotate(90deg);
+  animation: goDown 1s infinite;
+}
+
+@keyframes goDown {
+  0% {
+    left: 50vw;
+    bottom: 110px;
+  }
+  100% {
+    left: 50vw;
+    bottom: 10px;
+  }
+}
+
+/* navbar */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  background: black;
+  color: white;
+  display: flex;
+
+  padding: 5px 30px;
+  /* justify-content: center; */
+  align-items: center;
+  margin: auto;
+
+  position: sticky;
+  top: 5px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav ul li {
+  margin-left: 16px;
+}
+
+.nav ul li:hover {
+  background: red;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* paragraph */
+.paragraph {
+  background: white;
+  padding: 5px 40px;
+}
+
+article {
+  position: relative;
+  height: 80vh;
+}
+
+/* Images */
+.img h2 {
+  position: absolute;
+  left: 30vw;
+  top: 20vh;
+
+  background: rgba(0, 0, 0, 0.206);
+  color: white;
+  width: 250px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+footer {
+  background: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin-top: 32px;
+}
